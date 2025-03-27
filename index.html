@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashlesh's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header class="fixed-top">
+    <div class="container">
+        <!-- Navbar for larger screens -->
+        <nav class="d-flex flex-wrap justify-content-center py-3 my-3 d-none d-md-flex">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./assets/images/A_Logo.png" class="me-2" width="40" alt="">
+            <span class="fs-4">Ash's Portfolio</span>
+          </a>
+          
+          <ul class="nav nav-pills shadow-lg">
+            <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About me</a></li>
+            <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact me</a></li>
+          </ul>
+        </nav>
+        
+         <!-- Navbar for smaller screens -->
+    <nav class="navbar navbar-expand-md fixed-top d-md-none">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src="./assets/images/A_Logo.png" class="me-2" width="40" alt="">
+            Ash's Portfolio
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+              <li class="nav-item"><a class="nav-link active " aria-crrent="page" href="#home">Home</a></li>
+              <li class="nav-item"><li class="nav-item"><a class="nav-link" href="#about">About me</a></li><a class="nav-link" href="#resume">Resume</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact me</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+</header>
+
+<body >
+    <section id="home" class="hero-section position-relative">
+        <div class="hero-overlay position-absolute w-100 h-100" style="background: #024c39;"></div>
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center" style="min-height: 80vh;">
+                <div class="col-12 col-md-6 text-white pt-3 pt-md-0 text-center text-md-start">
+                    <h1 class="display-4 fw-bold pt-4 pb-3 py-md-0 ">Jack of All Trades, Master of Some</h1>
+                    <p class="lead pt-1 pt-md-0">A firm believer in <strong>'FAKE it till you MAKE it'</strong>— because confidence fuels capability.</p>
+                    <a href="#resume" class="btn btn-primary btn-lg mt-md-4 my-1 my-md-0">Scroll to Resume</a>
+                </div>
+                <div class="col-12 col-md-6 py-4 py-md-0">
+                    <img src="./assets/images/BgImage.png" class="img-fluid rounded shadow" alt="Ash pointing at his varsity jacket" style="max-height: 80vh;">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
