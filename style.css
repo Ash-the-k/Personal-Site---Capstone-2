@@ -1,21 +1,41 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
 body{
-    background-color: #95ffeb;
+    background-color: #95ffec64;
 }
 
 .fixed-top{
     position:sticky;
     background-color: #95ffeb;
+    z-index: 1050; 
+}
+
+
+
+.btn-scroll {
+  background-color: #024c39; 
+    color: #e8fffb;
+    border-color: rgb(69, 131, 115);
+    box-shadow: 5px 5px 15px #024c39;
+}
+
+.btn-scroll:hover {
+  background-color: #95ffeb; 
+  color: #014535;
+  border-color: #014535d8;
 }
 
 .btn-primary {
     background-color: #024c39; 
     color: #e8fffb;
-    border-color: rgb(69, 131, 115);
-    box-shadow: 5px 5px 15px #024c39;
+    border: #014535;
   }
   
   .btn-primary:hover {
-    background-color: #95ffeb; 
+    background-color: #ffffff; 
     color: #014535;
     border-color: #014535d8;
   }
@@ -33,6 +53,7 @@ body{
   .nav-link{
     color: #024c39;
     background-color: #b3fcef;
+    pointer-events: auto;
   }
 
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -63,5 +84,102 @@ body{
     color: #024c39;
     padding-left: 1em;
     border-bottom: 1px solid #01534053;
-  }
+  }  
   
+
+  /* Targeting the .btn-outline-success class */
+.btn-outline-success {
+  border-color: #014535; /* Border color */
+  color: #014535; /* Text color */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth transition for all changes */
+}
+
+/* Hover effect */
+.btn-outline-success:hover {
+  background-color: #015d46; /* Background color on hover */
+  color: white; /* Text color on hover */
+  border-color: #014535; /* Border color on hover */
+}
+.btn-outline-success:active{
+  background-color: #015d46 !important; /* Maintain hover color */
+  color: white !important; /* Maintain hover text color */
+  border-color: #014535 !important; /* Maintain border */
+  box-shadow: 0 0 12px rgba(1, 93, 70, 0.7) !important; /* Green glow effect */
+  transform: scale(0.96); /* Slight press-down effect */
+}
+
+
+.modal-dialog {
+  max-width: 70vw; /* 70% of viewport width */
+  height: 80vh; /* 80% of viewport height */
+}
+
+.modal-content {
+  height: 90%;
+}
+
+.modal-body {
+  flex-grow: 1; /* Allow body to expand */
+  overflow-y: auto; /* Enable scrolling if needed */
+}
+
+.ThumbnailContainer{
+  padding: 5px;
+}
+
+.h-image-container {
+  display: flex; /* Arrange images in a row */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  white-space: nowrap; /* Keep images in a single row */
+  gap: 0.3px; /* Add spacing between images */
+  align-items: center; /* Ensure images align properly */
+  height: 100%; /* Take full height of modal body */
+}
+
+.h-image-container img {
+  max-height: 100%; /* Take up full height of modal body */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.image-container {
+  display: flex; 
+  flex-direction: column; /* Stack images and videos vertically */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  gap: 8px; /* Add spacing between items */
+  align-items: center; /* Center items horizontally */
+  height: 100%; /* Take full height of modal body */
+}
+
+.image-container img{
+  max-width: 100%; /* Ensure images and videos don't overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners if needed */
+}
+
+.pdf-container {
+  width: 100%; 
+  height: 100%; /* Adjust height */
+  overflow-y: auto;
+  border: 1px solid #ccc; /* Optional border */
+}
+
+.pdf-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 576px) {  /* Target phones */
+  .modal-dialog {
+      max-width: 95vw !important; /* Take more space on smaller screens */
+      margin: 0 auto; /* Center it */
+  }
+}
+
+.h-image-container img {
+  max-width: 90%;  /* Make sure images fit within modal */
+  height: auto;     /* Maintain aspect ratio */
+}
