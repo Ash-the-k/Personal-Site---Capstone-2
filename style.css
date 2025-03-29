@@ -89,8 +89,8 @@ body{
 
   /* Targeting the .btn-outline-success class */
 .btn-outline-success {
-  border-color: #014535; /* Border color */
-  color: #014535; /* Text color */
+  border-color: #006249; /* Border color */
+  color: #006249; /* Text color */
   background-color: transparent; /* Transparent background */
   transition: all 0.3s ease; /* Smooth transition for all changes */
 }
@@ -189,3 +189,4 @@ body{
   max-width: 90%;  /* Make sure images fit within modal */
   height: auto;     /* Maintain aspect ratio */
 }
+
