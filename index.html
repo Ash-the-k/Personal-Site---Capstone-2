@@ -741,5 +741,42 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const sections = document.querySelectorAll("section");
+          const navLinks = document.querySelectorAll(".nav-link");
+      
+          function updateActiveLink() {
+              let scrollPosition = window.scrollY + window.innerHeight * 0.3; 
+              let activeSection = null;
+      
+              sections.forEach((section) => {
+                  let sectionTop = section.offsetTop;
+                  let sectionBottom = sectionTop + section.offsetHeight;
+      
+                  if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                      activeSection = section.id;
+                  }
+              });
+      
+              // Special case: if user is near bottom, force "Contact Me" as active
+              if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+                  activeSection = "contact";
+              }
+      
+              navLinks.forEach((link) => {
+                  if (link.getAttribute("href") === `#${activeSection}`) {
+                      link.classList.add("active");
+                  } else {
+                      link.classList.remove("active");
+                  }
+              });
+          }
+      
+          window.addEventListener("scroll", updateActiveLink);
+          window.addEventListener("load", updateActiveLink);
+      });
+      </script>
+      
 </body>
 </html>
