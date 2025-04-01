@@ -1,5 +1,7 @@
 # Portfolio Website - Capstone Project 2
 
+Live Demo: [View Project](https://ash-the-k.github.io/Personal-Site---Capstone-2/)
+
 ## Project Overview
 This project is the second capstone in the **Complete Full-Stack Web Development Bootcamp** on Udemy. The goal is to create a personal portfolio website using **HTML and CSS** that showcases your background, resume, past work, and contact details.
 
